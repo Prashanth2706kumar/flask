@@ -8,4 +8,4 @@ def login():
     print("Received:", data)
     return jsonify({"message": "Data received"}), 200
 if __name__ == "__main__":
-    app.run(port=5050,debug=False)
+    app.run(host="0.0.0.0",port=5050,debug=False)
